@@ -1,27 +1,27 @@
 /* Doit s'appliquer à l'ensemble des éléments de la page */
-{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 100%;
+ {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 100%;
 }
 
 /* Doit s'appliquer à tous les éléments p */
-{
-    text-align: center;
-    border: 2px dotted black;
-    background-color: aquamarine;
+ {
+  text-align: center;
+  border: 2px dotted black;
+  background-color: aquamarine;
 }
 
 /* Doit s'appliquer à tous les éléments de la class "c1" */
-{
-    text-align: right;
-    color: blue;
-    font-size: 1.5rem;
-    background-color: burlywood;
+ {
+  text-align: right;
+  color: blue;
+  font-size: 1.5rem;
+  background-color: burlywood;
 }
 
 /* Doit s'appliquer à l'élément ayant l'id "para" */
-{
-    text-align: unset;
-    color: red;
-    font-size: 1.3rem;
+ {
+  text-align: unset;
+  color: red;
+  font-size: 1.3rem;
 }
