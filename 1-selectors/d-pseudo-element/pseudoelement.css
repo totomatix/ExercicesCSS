@@ -1,0 +1,32 @@
+/* doit être appliqué avant chaque ancre de la page*/ 
+{
+    content: "→";
+}
+
+/* doit être appliqué à la suite de chaque label du formulaire */ 
+{
+    content: " *";
+}
+
+/* doit être appliqué à la première ligne de chaque paragraphe */ 
+{
+    text-transform: capitalize;
+    color: blue;
+}
+
+/* doit être appliqué à la première lettre de chaque paragraphe */ 
+{
+    color: red;
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    letter-spacing: 5px; 
+}
+
+/* doit être appliqué à la sélection de l'utilisateur sur un paragraphe */ 
+{
+    background-color: cyan;
+    color: coral;
+    text-shadow: 5px 5px #558ABB;
+}

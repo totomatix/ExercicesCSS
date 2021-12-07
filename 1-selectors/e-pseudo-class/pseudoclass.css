@@ -1,0 +1,21 @@
+/* doit s'appliquer aux éléments input cochés */ {
+  box-shadow: 0 0 0 3px orange;
+}
+
+/* doit s'appliquer au label suivant les éléments input cochés */ {
+  color: blueviolet;
+}
+
+/* doit s'appliquer aux fieldset qui ont un élément sélectionné à l'intérieur */ {
+  background-color: aqua;
+}
+
+/* doit s'appliquer aux élément input ayant l'attribut required */ {
+    border: 3px dotted red;
+}
+
+/* doit s'appliquer aux éléments legend quand ils sont survolés */ {
+    color: brown;
+    font-size: large;
+    font-weight: bolder;
+}

@@ -1,0 +1,29 @@
+[type="email"] /* doit s'appliquer seulement à l'élément input de type email */ {
+    border: 2px solid red;
+}
+
+[id*="input"] /* doit s'appliquer aux éléments input dont l'attribut id contient "input" */ {
+    font-size: larger;
+    background-color: aqua;
+}
+
+[name$="Name"] /* doit s'appliquer aux éléments input dont l'attribut name se termine par "Name" */ {
+    border: 4px dotted blue;
+}
+
+[for] /* doit s'appliquer à tous les éléments possédant un attribut for */ {
+    color: brown;
+}
+
+[name^="message"] /* doit s'appliquer à tous les éléments dont l'attribut name commence par "message" */ {
+    width: 50%;
+    height: 150px;
+}
+
+[type="submit"] /* doit s'appliquer aux éléments ayant l'attribut type à la valeur "submit" */ {
+    background-color: blueviolet;
+    color: chartreuse;
+    width: 500px;
+    height: 200px;
+    font-size: 3rem;
+}

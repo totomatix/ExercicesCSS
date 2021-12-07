@@ -1,0 +1,21 @@
+input:checked {
+  box-shadow: 0 0 0 3px orange;
+}
+
+input:checked + label {
+  color: blueviolet;
+}
+
+fieldset:focus-within {
+  background-color: aqua;
+}
+
+input:required {
+    border: 3px dotted red;
+}
+
+legend:hover {
+    color: brown;
+    font-size: large;
+    font-weight: bolder;
+}

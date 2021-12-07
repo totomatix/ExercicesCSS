@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pseudoelement.css" />
+    <title>Formulaires</title>
+  </head>
+  <body>
+    <h1>A propos de nous</h1>
+    <p>
+      lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.
+    </p>
+    <h1>Formulaire de connexion</h1>
+    <form action="./" method="POST">
+      <div>
+        <label for="email-input-c">Email :</label>
+        <input
+          id="email-input-c"
+          name="email"
+          type="email"
+          size="30"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="password-input">Password :</label>
+        <input id="password-input" name="password" type="password" required />
+      </div>
+
+      <div>
+        <input type="reset" value="Annuler" />
+        <input type="submit" value="Connexion" />
+      </div>
+    </form>
+    <a href="">S'inscrire</a>
+    <a href="">Mot de passe oublié</a>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+/* doit s'appliquer à la balise html */ 
+html {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100%;
+}
+
+/* doit s'appliquer à tous les éléments section présent dans l'élément d'id art1 */ 
+#art1 section {
+    color:blue;
+    font-size: 1.1rem;
+}
+
+/* doit s'appliquer à tous les éléments section descendants directs de l'élément d'id art2 */ 
+#art2 > section {
+    color: red;
+    font-size: 1.25rem;
+}
+
+/* doit s'appliquer à tous les éléments section qui suivent l'élément div dans l'élément d'id art3 */ 
+#art3 div ~ section {
+    color: green;
+    font-size: 1.8rem;
+}
+
+/* doit s'appliquer à l'élément section qui suit directement l'élément div dans l'élément d'id art4 */ 
+#art4 div + section {
+    color: violet;
+    font-size: 1.45rem;
+}
+
+/* doit s'appliquer à tous les éléments h2  et section */ 
+h2, section { 
+    border: 2px solid pink;
+}
+
+/* doit s'appliquer à tous les div ayant la classe toto*/
+div.toto {
+    background-color: aquamarine;
+}

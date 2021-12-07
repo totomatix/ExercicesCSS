@@ -1,0 +1,25 @@
+/* doit s'appliquer aux fieldset étant les premiers enfants de leur container */ {
+  border: 5px dotted brown;
+}
+
+/* doit s'appliquer aux derniers enfants des éléments form */ {
+  border: 2px groove red;
+  color: blue;
+  padding: 5px;
+}
+
+/* doit s'appliquer aux fieldset "pairs" (c.a.d au 2ème 4ème 6ème etc. fieldset dans un container) */ {
+  background-color: cadetblue;
+}
+
+/* doit s'appliquer aux fieldset "impairs" (c.a.d au 1er 3ème 5ème etc. fieldset dans un container) */ {
+  background-color: chartreuse;
+}
+
+/* doit s'appliquer à l'avant dernier élèment de type fieldset dans un container */ {
+    color: rgb(212, 13, 39);
+}
+
+/* doit s'appliquer aux éléments input qui ne sont "required" */ {
+    background-color: blueviolet;
+}

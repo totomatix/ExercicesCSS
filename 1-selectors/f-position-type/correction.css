@@ -1,0 +1,25 @@
+fieldset:first-child {
+  border: 5px dotted brown;
+}
+
+form:last-child {
+  border: 2px groove red;
+  color: blue;
+  padding: 5px;
+}
+
+fieldset:nth-child(2n) {
+  background-color: cadetblue;
+}
+
+fieldset:nth-child(2n + 1) {
+  background-color: chartreuse;
+}
+
+fieldset:nth-last-of-type(2) {
+    color: rgb(212, 13, 39);
+}
+
+input:not(:required) {
+    background-color: blueviolet;
+}

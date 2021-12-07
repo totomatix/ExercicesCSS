@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="position_type.css" />
+    <title>Formulaires</title>
+  </head>
+  <body>
+    <h1>Contact Us</h1>
+
+    <form action="./" method="POST">
+      <fieldset>
+        <label for="fN-input">First Name*:</label>
+        <input id="fN-input" name="firstName" type="text" required />
+
+        <label for="lN-input">Last Name*:</label>
+        <input id="lN-input" name="lastName" type="text" required />
+      </fieldset>
+      <fieldset>
+        <label for="email-input">Email*:</label>
+        <input id="email-input" name="email" type="email" size="30" required />
+      </fieldset>
+      <fieldset>
+        <label for="message-input">Message*:</label>
+        <textarea
+          id="message-input"
+          name="message"
+          maxlength="250"
+          required
+          placeholder="Max(250 characters)"
+        ></textarea>
+      </fieldset>
+
+      <input type="submit" value="Envoyer" />
+    </form>
+
+    <h1>Formulaire Quiz</h1>
+    <!-- multipart/form-data est obligatoire quand ont veut envoyer des fichiers -->
+    <form action="./" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Question 1</legend>
+        <p>Culture générale. Quiz III. Quel insecte produit le miel ?</p>
+        <div>
+          <input type="radio" name="q1" id="q1-1" value="L'abeille" />
+          <label for="q1-1">L'abeille</label>
+        </div>
+        <div>
+          <input type="radio" name="q1" id="q1-2" value="Le scarabée" />
+          <label for="q1-2">Le scarabée</label>
+        </div>
+        <div>
+          <input type="radio" name="q1" id="q1-3" value="Le puceron" />
+          <label for="q1-3">Le puceron</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Question 2</legend>
+        <label for="q2-select">
+          Égypte ancienne. Quel fleuve traverse l'Égypte ?
+        </label>
+        <select name="q2" id="q2-select">
+          <option value="">--Choisir une réponse--</option>
+          <option value="Le Kibo">Le Kibo</option>
+          <option value="cat">Le Danube</option>
+          <option value="hamster">Le Nil</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Question 3</legend>
+        <p>Quels sont vos languages de programation ?</p>
+
+        <div>
+          <input type="checkbox" name="q3" id="q3-1" value="c++" />
+          <label for="q3-1">C++</label>
+        </div>
+
+        <div>
+          <input type="checkbox" name="q3" id="q3-2" value="Java" />
+          <label for="q3-2">Java</label>
+        </div>
+
+        <div>
+          <input type="checkbox" name="q3" id="q3-3" value="c#" />
+          <label for="q3-3">c#</label>
+        </div>
+
+        <div>
+          <input type="checkbox" name="q3" id="q3-4" value="JavaScript" />
+          <label for="q3-4">JavaScript</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Question 4</legend>
+        <label for="q4-range">
+          Quel est votre intérêt pour le produit ? (Entre 0 et 10)
+        </label>
+        <div>
+          <input
+            type="range"
+            name="q4"
+            id="q4-range"
+            min="0"
+            max="10"
+            value="5"
+          />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Question 5</legend>
+        <label for="q5-date">
+          Quel est la date de la prise de la Bastille ?
+        </label>
+        <div>
+          <input type="date" name="q5" id="q5-date" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Question 6</legend>
+        <label for="q6-color">Quel est votre couleur préférée ?</label>
+        <div>
+          <input type="color" name="q6" id="q6-color" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Informations personnelles</legend>
+        <div>
+          <label for="lN-input-ip">Nom*:</label>
+          <input
+            id="lN-input-ip"
+            name="firstName"
+            type="text"
+            required
+            placeholder="Nom"
+          />
+          <label for="fN-input-ip">Prénom*:</label>
+          <input
+            id="fN-input-ip"
+            name="firstName"
+            type="text"
+            required
+            placeholder="Prénom"
+          />
+        </div>
+
+        <div>
+          <label for="avatar-input">Avatar*:</label>
+          <input
+            id="avatar-input"
+            name="avatar"
+            type="file"
+            accept="image/*"
+            required
+          />
+        </div>
+      </fieldset>
+      <br />
+      <input type="reset" value="Réinitialiser le formulaire" />
+      <input type="submit" value="Envoyer le formulaire" />
+    </form>
+
+    <h1>Formulaire de connexion</h1>
+    <form action="./" method="POST">
+      <fieldset>
+        <div>
+          <label for="email-input-c">Email*:</label>
+          <input
+            id="email-input-c"
+            name="email"
+            type="email"
+            size="30"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="password-input">Password*:</label>
+          <input id="password-input" name="password" type="password" required />
+        </div>
+
+        <div>
+          <input type="reset" value="Annuler" />
+          <input type="submit" value="Connexion" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
